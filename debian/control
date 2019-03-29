@@ -1,0 +1,23 @@
+Source: libubootenv
+Section: devel
+Priority: extra
+Maintainer: Cedric Hombourger <Cedric_Hombourger@mentor.com>
+Build-Depends: cmake, debhelper (>=10)
+Standards-Version: 3.9.8
+Homepage: https://github.com/sbabic/libubootenv
+
+Package: libubootenv
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: library providing hardware-independent to U-Boot environment.
+ U-Boot has its default environment compiled board-dependently and this
+ means that tools to access the environment are also board specific, too.
+
+Package: libubootenv-dev
+Section: libdevel
+Architecture: any
+Depends: libubootenv, ${shlibs:Depends}, ${misc:Depends}
+Description: development files for libubootenv
+ libubootenv is a library that provides a hardware independent way
+ to access to U-Boot environment.

@@ -1,0 +1,5 @@
+libubootenv (0.1+mel1) UNRELEASED; urgency=low
+
+  * Initial release. 
+
+ -- Cedric Hombourger <Cedric_Hombourger@mentor.com>  Fri, 29 Mar 2019 07:34:47 +0100

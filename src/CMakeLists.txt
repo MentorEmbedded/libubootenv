@@ -12,12 +12,13 @@ SET(include_HEADERS
 
 add_library(ubootenv SHARED ${libubootenv_SOURCES} ${include_HEADERS})
 SET_TARGET_PROPERTIES(ubootenv PROPERTIES SOVERSION ${SOVERSION})
+target_link_libraries(ubootenv z) 
 
 ADD_LIBRARY(ubootenv_static STATIC ${libubootenv_SOURCES} ${include_HEADERS})
 add_executable(fw_printenv fw_printenv.c)
 add_executable(fw_setenv fw_setenv.c)
-target_link_libraries(fw_printenv ubootenv z)
-target_link_libraries(fw_setenv ubootenv z)
+target_link_libraries(fw_printenv ubootenv) 
+target_link_libraries(fw_setenv ubootenv)
 
 install (TARGETS ubootenv DESTINATION lib)
 install (FILES libuboot.h DESTINATION include)
