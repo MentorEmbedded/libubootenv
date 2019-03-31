@@ -2,7 +2,7 @@ Source: libubootenv
 Section: devel
 Priority: extra
 Maintainer: Cedric Hombourger <Cedric_Hombourger@mentor.com>
-Build-Depends: cmake, debhelper (>=10)
+Build-Depends: cmake, debhelper (>=10), zlib1g-dev
 Standards-Version: 3.9.8
 Homepage: https://github.com/sbabic/libubootenv
 
