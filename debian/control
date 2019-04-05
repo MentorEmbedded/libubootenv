@@ -21,3 +21,11 @@ Depends: libubootenv, ${shlibs:Depends}, ${misc:Depends}
 Description: development files for libubootenv
  libubootenv is a library that provides a hardware independent way
  to access to U-Boot environment.
+
+Package: libubootenv-tools
+Section: utils
+Architecture: any
+Depends: libubootenv, ${shlibs:Depends}, ${misc:Depends}
+Description: libubootenv tools
+ libubootenv is a library that provides a hardware independent way
+ to access to U-Boot environment.
